@@ -20,9 +20,14 @@ def assign_rooms(arr)
   return newarr
 end
 
-def printer (array)
-  batch_badge_creator.each {|id| print id}
-  assign_rooms.each {|id| print id}
-end 
+def printer(arr)
+  batch_badge_creator(arr).each do |badge|
+    puts badge
+  end
+
+  assign_rooms(arr).each do |assignment|
+    puts assignment
+  end
+end
 
 
